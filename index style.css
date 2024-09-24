@@ -1,0 +1,218 @@
+/* Basic reset */ 
+*{
+
+    margin:0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    box-sizing: border-box;
+    
+
+}
+
+
+/* Container styling */
+.header {
+    width: 100%;
+    min-height: 100vh;
+    background-image :linear-gradient(rgba(71, 71, 73, 0.65),rgba(88, 87, 91, 0.65)),url(businessmen-using-computer-aml-anti-600nw-2224707903.webp);
+    background-size: cover;
+    box-shadow: 0 0 10px#323434;
+    background-position: center;
+    padding: 10px 8% ;
+}
+nav {
+
+    width: 100%; ;
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.logo{
+   width: 150px;
+   cursor: pointer;
+   
+}
+nav ul{
+    list-style: none;
+    width: 100%;
+    text-align: right;
+    padding-right: 60px;
+
+}
+nav ul li {
+    display: inline-block;
+    margin: 10px 20px; 
+}
+nav ul li a{
+    color: #fff;
+    text-decoration: none ;
+}
+
+nav ul li::after{
+content:'';
+width:0;
+height: 2px;
+background:#f44336 ;
+display: block;
+margin: auto;
+transition: 0.5s;
+}
+
+nav ul li:hover::after{
+    width:100%;
+
+}
+.text-box{
+    width:90%;
+    color: #fff;
+    position: absolute;
+    top: 50% ;
+    left: 50% ;
+    transform: translate(-50%,-50%);
+    text-align:center;
+}
+.text-box h1{
+    font-size: 62px;
+}
+.text-box p{
+    margin: 10px 0 40px;
+    font-size: 16px;
+    color: #fff;
+
+}
+.hero-btn{
+    display:inline-block;
+    text-decoration:none;
+    color:#fff;
+    border: 1px solid#fff;
+    padding: 12px 34px;
+    font-size :13px; 
+    background:transparent;
+    position: relative; 
+    cursor: pointer;
+}
+.hero-btn:hover{
+    border:1px solid #f44336;
+    background-color: #f44336;
+    transition:1s;
+}
+
+/*-------course--------*/
+.course{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px;
+}
+h1{
+    font-size: 36px;
+    font-weight: 600;
+}
+p{
+    color: #171616;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 22px;
+    padding: 10px;
+}  
+.row{
+    margin: top 5%;
+    display: flex;
+    justify-content: space-between;
+}
+.course-col{ 
+    
+    flex-basis: 31%;
+    gap: 20px;
+    background: #fff3f3;
+    border-radius: 15px;
+    margin-bottom: 5%;
+    padding: 25px 15px;
+    box-sizing: border-box;
+    margin-right: 2%;
+    transition: 0.5s;
+}
+h3{
+    text-align: center;
+    font-weight: 600;
+    margin: 10px 0;
+}
+.course-col:hover{
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.2);
+}
+.facilities{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    padding-top: 100px; 
+
+}
+.row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.facilities-col {
+    flex: 1;
+    text-align: center;
+    margin: 0 10px;
+}
+
+.facility-img {
+    width: 100%;
+    height: 200px; /* Set the desired height */
+    object-fit: cover; /* Ensures the image covers the entire area without distortion */
+}
+
+
+
+/*Footer*/
+
+footer {
+    width: 100%;
+    background: #eaeaea;
+}
+
+footer .footer_main {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .footer_main .tag {
+    margin: 10px 0;
+}
+
+footer .footer_main .tag img {
+    width: 400px;
+    margin-bottom: 10px;
+}
+
+footer .footer_main .tag p {
+    width: 250px;
+    line-height: 22px;
+    text-align: justify;
+}
+
+footer .footer_main .tag h1 {
+    font-size: 25px;
+    margin: 25px 0;
+    color: #000;
+}
+
+footer .footer_main .tag a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    margin: 10px 0;
+}
+
+footer .footer_main .tag i {
+    margin-right: 10px;
+}
+
+footer .footer_main .tag .social_link i {
+    margin: 0 5px;
+}

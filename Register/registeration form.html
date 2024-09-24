@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baking App Registration</title>
+    <link rel="stylesheet" href="registeration form style.css">
+</head>
+<body>
+    <form class="registration-form" action="/submit_registration" method="POST">
+        <!-- Step 1: User Details -->
+        <div id="step-1">
+            <h2>Register for Baking App</h2>
+
+            <label for="name">Full Name</label>
+            <input type="text" id="name" name="name" placeholder="Enter your name" required>
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" required>
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+            <label for="confirm_password">Confirm Password</label>
+            <input type="password" id="confirm_password" name="confirm_password" placeholder="Confirm your password" required>
+
+            <label for="mobile">Mobile Number</label>
+            <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number" required>
+
+            <label for="favorite_bake">Favorite Bake</label>
+            <input type="text" id="favorite_bake" name="favorite_bake" placeholder="Your favorite baked good">
+
+            <!-- Login Button -->
+            <div class="buttons">
+                <a href="/Register\login 2.html" class="login-button">Already have an account? Login</a>
+            </div>
+
+            <button type="button" class="next-button" onclick="showStep2()">Next</button>
+        </div>
+
+        <!-- Step 2: Bank, PAN, and Aadhaar Details -->
+        <div id="step-2" style="display:none;">
+            <h3>Bank, PAN, and Aadhaar Details</h3>
+
+            <label for="account_holder_name">Account Holder Name</label>
+            <input type="text" id="account_holder_name" name="account_holder_name" placeholder="Enter account holder's name" required>
+
+            <label for="bank_name">Bank Name</label>
+            <input type="text" id="bank_name" name="bank_name" placeholder="Enter your bank name" required>
+
+            <label for="account_number">Account Number</label>
+            <input type="number" id="account_number" name="account_number" placeholder="Enter your account number" required>
+
+            <label for="ifsc">IFSC Code</label>
+            <input type="text" id="ifsc" name="ifsc" placeholder="Enter your bank's IFSC code" required>
+
+            <label for="branch_name">Branch Name</label>
+            <input type="text" id="branch_name" name="branch_name" placeholder="Enter your branch name" required>
+
+            <label for="pan_card">PAN Card Number</label>
+            <input type="text" id="pan_card" name="pan_card" placeholder="Enter your PAN card number" required>
+
+            <label for="aadhaar">Aadhaar Number</label>
+            <input type="text" id="aadhaar" name="aadhaar" placeholder="Enter your Aadhaar number" required>
+
+          <!-- Signup Form -->
+<form action="coustomer.html" method="GET">
+    <!-- Signup Button -->
+    <div class="buttons">
+        <form action="coustomer.html" method="GET"></form>
+        <input type="submit" value="Sign Up">
+    </div>
+</form>
+
+
+    <script>
+        function showStep2() {
+            document.getElementById('step-1').style.display = 'none';
+            document.getElementById('step-2').style.display = 'block';
+        }
+    </script>
+
+</body>
+</html>

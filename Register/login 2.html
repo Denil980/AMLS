@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <!-- Link to the external CSS file -->
+    <link rel="stylesheet" href="login2.css">
+    <!-- Link to the external JavaScript file -->
+    <script defer src="login.js"></script>
+</head>
+<body>
+    <div class="login-container">
+        <div class="logo">
+            <!-- Add logo here if available -->
+            <img src="logo.png" alt="Company Logo">
+        </div>
+        <h2>Login</h2>
+        <form id="loginForm">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" placeholder="Enter your username" required aria-label="Username">
+
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" required aria-label="Password">
+
+            <div class="button-group">
+                <button type="button" id="adminLogin" class="admin-btn">Login as Admin</button>
+                <button type="button" id="customerLogin" class="user-btn">Login as Customer</button>
+            </div>
+
+            <div class="options">
+                <a href="#">Forgot your password?</a>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
